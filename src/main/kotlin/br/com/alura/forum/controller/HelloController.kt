@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.RestController
 class HelloController {
 
     @GetMapping
-    fun hello():String{
-        return "Hello World";
+    fun hello(): String {
+        return "Hello World!"
     }
+
 }
