@@ -7,6 +7,7 @@ API REST Fórum da alura, desenvolvido com o auxílio da aula da alura API REST 
  * Maven
  * Spring boot Versão 2.5.6
  * Linguagem Kotlin
+ * Java 11
  * Dependências
    * Spring web
    * Bean Validation
@@ -14,6 +15,7 @@ API REST Fórum da alura, desenvolvido com o auxílio da aula da alura API REST 
  
  ## Ambiente de Desenvolvimento 
   IntelliJ IDEA
+  JDK 11
   
 ### Endpoint
   http://localhost:8081/hello
