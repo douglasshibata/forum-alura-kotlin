@@ -7,7 +7,8 @@ API REST Fórum da alura, desenvolvido com o auxílio da aula da alura API REST 
  * Maven
  * Spring boot Versão 2.5.6
  * Linguagem Kotlin
- * Kotlin
+ * Kotlin 1.4.31
+ * Java 11
  * Dependências
    * Spring web
    * Bean Validation
