@@ -14,10 +14,10 @@ import java.util.stream.Collectors
 
 @Service
 class TopicoService(
-    private val repository: TopicoRepository,
-    private val topicoViewMapper: TopicoViewMapper,
-    private val topicoFormMapper: TopicoFormMapper,
-    private val notFoundMessage: String = "Topico nao encontrado!"
+        private val repository: TopicoRepository,
+        private val topicoViewMapper: TopicoViewMapper,
+        private val topicoFormMapper: TopicoFormMapper,
+        private val notFoundMessage: String = "Topico nao encontrado!"
 ) {
 
     fun listar(): List<TopicoView> {
@@ -28,7 +28,7 @@ class TopicoService(
 
     fun buscarPorId(id: Long): TopicoView {
         val topico = repository.findById(id)
-            .orElseThrow{NotFoundException(notFoundMessage)}
+                .orElseThrow{NotFoundException(notFoundMessage)}
         return topicoViewMapper.map(topico)
     }
 
@@ -40,7 +40,7 @@ class TopicoService(
 
     fun atualizar(form: AtualizacaoTopicoForm): TopicoView {
         val topico = repository.findById(form.id)
-            .orElseThrow{NotFoundException(notFoundMessage)}
+                .orElseThrow{NotFoundException(notFoundMessage)}
         topico.titulo = form.titulo
         topico.mensagem = form.mensagem
         return topicoViewMapper.map(topico)
